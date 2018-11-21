@@ -7,7 +7,7 @@
 ```python
 import numpy as np # use numpy.zeros(), numpy.array()
 import math # use math.pi, math.sqrt(), math.sin(), math.cos()
-import cv2 as cv # read image cv2.imread()
+import cv2 as cv # read image cv.imread()
 import matplotlib.pyplot as plt # plot image
 ```
 
@@ -15,14 +15,14 @@ import matplotlib.pyplot as plt # plot image
 
 
 ```python
-image = cv.imread("lena.jpg",0)
+image = cv.imread("input.png",0)
 plt.imshow(image,cmap="gray")
 plt.title("Original")
 plt.show()
 ```
 
 
-![png](output_4_0.png)
+![png](input.png)
 
 
 ## Functions
@@ -67,7 +67,7 @@ def translate(img,dx,dy):
 
     return img_f
 
-img = translate(image,50,100)
+img = translate(image,25,15)
 plt.imshow(img,cmap="gray")
 plt.title("Translation dx=50, dy=100")
 plt.show()
