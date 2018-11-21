@@ -22,33 +22,16 @@ plt.show()
 ```
 
 
-![png](input.png)
+![png](images/input.png)
 
 
 ## Functions
 
 ### Translate
 
-Considering that $(u,v)$ is the new image pixel and $(x,y)$ the old image pixel, translation is
+Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, translation is
 
-$$
-\left(\begin{array}{c}
-x \\
-y \\
-1
-\end{array}\right)=
-\left(\begin{array}{ccc}
-1 & 0 & -dx\\
-0 & 1 & -dy\\
-0 & 0 & 1
-\end{array}\right)
-\left(\begin{array}{c}
-u\\
-v\\
-1
-\end{array}\right)
-$$
-
+![png](images/translation.png)
 
 ```python
 def translate(img,dx,dy):
@@ -74,31 +57,14 @@ plt.show()
 ```
 
 
-![png](output_7_0.png)
+![png](images/output_7_0.png)
 
 
 ### Rotate (in degrees)
 
-Considering that $(u,v)$ is the new image pixel and $(x,y)$ the old image pixel, rotation is
+Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, rotation is
 
-$$
-\left(\begin{array}{c}
-x \\
-y \\
-1
-\end{array}\right)=
-\left(\begin{array}{ccc}
-cos(\theta) & -sin(\theta) & 0\\
-sin(\theta) & cos(\theta) & 0\\
-0 & 0 & 1
-\end{array}\right)
-\left(\begin{array}{c}
-u\\
-v\\
-1
-\end{array}\right)
-$$
-
+![png](images/rotation.png)
 
 ```python
 def rotate(img,ang):
@@ -124,31 +90,14 @@ plt.show()
 ```
 
 
-![png](output_9_0.png)
+![png](images/output_9_0.png)
 
 
 ### Scale
 
-Considering that $(u,v)$ is the new image pixel and $(x,y)$ the old image pixel, scaling is
+Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, scaling is
 
-$$
-\left(\begin{array}{c}
-x \\
-y \\
-1
-\end{array}\right)=
-\left(\begin{array}{ccc}
-1/S_x & 0 & 0\\
-0 & 1/S_y & 0\\
-0 & 0 & 1
-\end{array}\right)
-\left(\begin{array}{c}
-u\\
-v\\
-1
-\end{array}\right)
-$$
-
+![png](images/scale.png)
 
 ```python
 def scale(img,sx,sy):
@@ -178,31 +127,14 @@ plt.show()
 ```
 
 
-![png](output_11_0.png)
+![png](images/output_11_0.png)
 
 
 ### Shear
 
-Considering that $(u,v)$ is the new image pixel and $(x,y)$ the old image pixel, shearing is
+Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, shearing is
 
-$$
-\left(\begin{array}{c}
-x \\
-y \\
-1
-\end{array}\right)=
-\left(\begin{array}{ccc}
-1 & -sh_x & 0\\
--sh_y & 1 & 0\\
-0 & 0 & 1
-\end{array}\right)
-\left(\begin{array}{c}
-u\\
-v\\
-1
-\end{array}\right)
-$$
-
+![png](images/shear.png)
 
 ```python
 def shear(img,shx,shy):
@@ -228,31 +160,14 @@ plt.show()
 ```
 
 
-![png](output_13_0.png)
+![png](images/output_13_0.png)
 
 
 ### Affine Transformation
 
-Considering that $(u,v)$ is the new image pixel and $(x,y)$ the old image pixel, affine transformation is
+Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, affine transformation is
 
-$$
-\left(\begin{array}{c}
-x \\
-y \\
-1
-\end{array}\right)=
-\left(\begin{array}{ccc}
-t_{11} & t_{21} & t_{31}\\
-t_{12} & t_{22} & t_{32}\\
-0 & 0 & 1
-\end{array}\right)
-\left(\begin{array}{c}
-u\\
-v\\
-1
-\end{array}\right)
-$$
-
+![png](images/affine.png)
 
 ```python
 def affine(img,m):
@@ -283,5 +198,6 @@ img = affine(image, m)
 plt.imshow(img, cmap="gray")
 plt.title("Rotation 45 degrees around image center")
 plt.show()
+```
 
-![png](output_15_1.png)
+![png](images/output_15_1.png)
