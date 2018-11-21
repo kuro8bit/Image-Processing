@@ -15,8 +15,15 @@ import matplotlib.pyplot as plt # plot image
 
 
 ```python
-filename = "lena.jpg"
+image = cv.imread("lena.jpg",0)
+plt.imshow(image,cmap="gray")
+plt.title("Original")
+plt.show()
 ```
+
+
+![png](output_4_0.png)
+
 
 ## Functions
 
@@ -60,7 +67,6 @@ def translate(img,dx,dy):
 
     return img_f
 
-image = cv.imread(filename,0)
 img = translate(image,50,100)
 plt.imshow(img,cmap="gray")
 plt.title("Translation dx=50, dy=100")
@@ -93,6 +99,7 @@ v\\
 \end{array}\right)
 $$
 
+
 ```python
 def rotate(img,ang):
     row,col = img.shape[:2]
@@ -110,7 +117,6 @@ def rotate(img,ang):
                 img_f[v,u] = img[y,x]    
     return img_f
 
-image = cv.imread(filename,0)
 img = rotate(image,45)
 plt.imshow(img,cmap="gray")
 plt.title("Rotation 45 degrees")
@@ -143,6 +149,7 @@ v\\
 \end{array}\right)
 $$
 
+
 ```python
 def scale(img,sx,sy):
     row,col = img.shape[:2]
@@ -164,7 +171,6 @@ def scale(img,sx,sy):
 
     return img_f
 
-image = cv.imread(filename,0)
 img = scale(image,2,3)
 plt.imshow(img,cmap="gray")
 plt.title("Scale sx=2, sy=3")
@@ -197,6 +203,7 @@ v\\
 \end{array}\right)
 $$
 
+
 ```python
 def shear(img,shx,shy):
     row,col = img.shape[:2]
@@ -214,7 +221,6 @@ def shear(img,shx,shy):
 
     return img_f
 
-image = cv.imread(filename,0)
 img = shear(image,0.75,-0.25)
 plt.imshow(img,cmap="gray")
 plt.title("Shearing shx=0.75, shy=-0.25")
@@ -266,7 +272,6 @@ def affine(img,m):
     return img_f
 
 # rotate around image center
-image = cv.imread(filename,0)
 rad = 45*math.pi/180
 row,col = image.shape[:2]
 tx = (1-math.cos(rad))*row/2 - math.sin(rad)*col/2
@@ -278,7 +283,5 @@ img = affine(image, m)
 plt.imshow(img, cmap="gray")
 plt.title("Rotation 45 degrees around image center")
 plt.show()
-```
 
-
-![png](output_15_0.png)
+![png](output_15_1.png)
