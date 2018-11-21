@@ -14,17 +14,12 @@
 import numpy as np # use numpy.zeros(), numpy.array()
 import math # use math.pi, math.sqrt(), math.sin(), math.cos()
 import cv2 as cv # read image cv.imread()
-import matplotlib.pyplot as plt # plot image
 ```
 
-## Image test
-
+## Image Test
 
 ```python
 image = cv.imread("input.png",0)
-plt.imshow(image,cmap="gray")
-plt.title("Original")
-plt.show()
 ```
 
 
@@ -55,10 +50,8 @@ def translate(img,dx,dy):
 
     return img_f
 
-img = translate(image,25,15)
-plt.imshow(img,cmap="gray")
-plt.title("Translation dx=50, dy=100")
-plt.show()
+dx,dy = 25,15
+img = translate(image,dx,dy)
 ```
 
 
@@ -88,10 +81,8 @@ def rotate(img,ang):
                 img_f[v,u] = img[y,x]    
     return img_f
 
-img = rotate(image,45)
-plt.imshow(img,cmap="gray")
-plt.title("Rotation 45 degrees")
-plt.show()
+ang = 45
+img = rotate(image,ang)
 ```
 
 
@@ -125,10 +116,8 @@ def scale(img,sx,sy):
 
     return img_f
 
-img = scale(image,2,3)
-plt.imshow(img,cmap="gray")
-plt.title("Scale sx=2, sy=3")
-plt.show()
+sx,sy = 2,3
+img = scale(image,sx,sy)
 ```
 
 
@@ -158,10 +147,8 @@ def shear(img,shx,shy):
 
     return img_f
 
-img = shear(image,0.75,-0.25)
-plt.imshow(img,cmap="gray")
-plt.title("Shearing shx=0.75, shy=-0.25")
-plt.show()
+shx,shy = 0.75,-0.25
+img = shear(image,shx,shy)
 ```
 
 
@@ -199,10 +186,8 @@ ty = math.sin(rad)*row/2 + (1-math.cos(rad))*col/2
 
 m = np.array(([math.cos(rad),-math.sin(rad),ty],
               [math.sin(rad), math.cos(rad),tx]))
+
 img = affine(image, m)
-plt.imshow(img, cmap="gray")
-plt.title("Rotation 45 degrees around image center")
-plt.show()
 ```
 
 ![png](images/output_15_1.png)
