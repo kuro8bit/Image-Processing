@@ -1,6 +1,12 @@
 
 # Geometric Transformations
 
+- Translation
+- Rotation
+- Scaling
+- Shearing
+- Affine Transformation
+
 ## Libraries
 
 
@@ -24,10 +30,9 @@ plt.show()
 
 ![png](images/input.png)
 
-
 ## Functions
 
-### Translate
+### Translation
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, translation is
 
@@ -60,7 +65,7 @@ plt.show()
 ![png](images/output_7_0.png)
 
 
-### Rotate (in degrees)
+### Rotation (in degrees)
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, rotation is
 
@@ -93,7 +98,7 @@ plt.show()
 ![png](images/output_9_0.png)
 
 
-### Scale
+### Scaling
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, scaling is
 
@@ -130,7 +135,7 @@ plt.show()
 ![png](images/output_11_0.png)
 
 
-### Shear
+### Shearing
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, shearing is
 
