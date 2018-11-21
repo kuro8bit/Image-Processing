@@ -190,4 +190,4 @@ m = np.array(([math.cos(rad),-math.sin(rad),ty],
 img = affine(image, m)
 ```
 
-![png](images/output_15_1.png)
+![png](images/output_15_0.png)
