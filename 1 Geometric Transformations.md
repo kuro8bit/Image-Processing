@@ -7,24 +7,6 @@
 - Shearing
 - Affine Transformation
 
-## Libraries
-
-
-```python
-import numpy as np # use numpy.zeros(), numpy.array()
-import math # use math.pi, math.sqrt(), math.sin(), math.cos()
-import cv2 as cv # read image cv.imread()
-```
-
-## Image Test
-
-```python
-image = cv.imread("input.png",0)
-```
-
-
-![png](images/input.png)
-
 ## Functions
 
 ### Translation
@@ -49,9 +31,6 @@ def translate(img,dx,dy):
                 img_f[v,u] = img[y,x]
 
     return img_f
-
-dx,dy = 25,15
-img = translate(image,dx,dy)
 ```
 
 
@@ -80,9 +59,6 @@ def rotate(img,ang):
             if(0<=x<col and 0<=y<row):
                 img_f[v,u] = img[y,x]    
     return img_f
-
-ang = 45
-img = rotate(image,ang)
 ```
 
 
@@ -115,9 +91,6 @@ def scale(img,sx,sy):
                 img_f[v,u] = img[y,x]
 
     return img_f
-
-sx,sy = 2,3
-img = scale(image,sx,sy)
 ```
 
 
@@ -146,9 +119,6 @@ def shear(img,shx,shy):
                 img_f[v,u] = img[y,x]
 
     return img_f
-
-shx,shy = 0.75,-0.25
-img = shear(image,shx,shy)
 ```
 
 
@@ -177,17 +147,6 @@ def affine(img,m):
                 img_f[v,u] = img[y,x]
 
     return img_f
-
-# rotate around image center
-rad = 45*math.pi/180
-row,col = image.shape[:2]
-tx = (1-math.cos(rad))*row/2 - math.sin(rad)*col/2
-ty = math.sin(rad)*row/2 + (1-math.cos(rad))*col/2
-
-m = np.array(([math.cos(rad),-math.sin(rad),ty],
-              [math.sin(rad), math.cos(rad),tx]))
-
-img = affine(image, m)
 ```
 
 ![png](images/output_15_0.png)
