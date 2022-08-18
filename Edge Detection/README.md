@@ -16,4 +16,4 @@ Simple image edge detection
 - Laplacian 4
 - Laplacian 8
 
-Time execution: around 10 seconds
+Time execution of each filter: around 10 seconds
