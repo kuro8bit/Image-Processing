@@ -1,6 +1,6 @@
 # Image Processing
 
-Codes made in image processing during college. All codes were made without using openCV ready made functions.
+Codes made for image processing. All codes were made without using openCV ready made functions.
 
 Libraries and programming language used:
 - [Python 3](https://www.python.org)
