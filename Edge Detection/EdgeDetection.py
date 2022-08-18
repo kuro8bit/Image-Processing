@@ -105,7 +105,7 @@ for flt in filters:
     cv2.imshow(title, img1)
 
     # save output image
-    cv2.imwrite('output-' + flt + '.png', img1)
+    cv2.imwrite('images/output-' + flt + '.png', img1)
 
 cv2.waitKey()
 cv2.destroyAllWindows()
