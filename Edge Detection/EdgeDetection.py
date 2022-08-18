@@ -3,7 +3,7 @@ import cv2
 import time
 
 # input image filepath
-filepath = 'input.png'
+filepath = 'images/input.png'
 
 # Edge Detection Class
 class edge:
