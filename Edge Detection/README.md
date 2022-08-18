@@ -1,6 +1,7 @@
 ## Edge Detection
 Simple image edge detection
-.py and .ipynb version
+
+`.py` and `.ipynb` version
 
 ### Libraries
 - Numpy
