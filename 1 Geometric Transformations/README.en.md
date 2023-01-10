@@ -1,11 +1,15 @@
 
 # Geometric Transformations
 
-- Translation
-- Rotation
-- Scaling
-- Shearing
-- Affine Transformation
+[English](README.en.md) | [日本語](README.md)
+
+---------------------------------------
+
+- [Translation](README.md#L16)
+- [Rotation](README.md#L44)
+- [Scaling](README.md#L72)
+- [Shearing](README.md#L104)
+- [Affine Transformation](README.md#L132)
 
 ## Functions
 
