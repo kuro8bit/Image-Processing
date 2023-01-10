@@ -4,7 +4,7 @@
 
 ---------------------------------------
 
-Codes made for image processing. All codes were made without using openCV ready made functions.
+Codes made for image processing. All codes were made without using openCV already made functions.
 
 Libraries and programming language used:
 - [Python 3](https://www.python.org)
