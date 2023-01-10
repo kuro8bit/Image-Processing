@@ -18,8 +18,26 @@ English | [日本語](README.md)
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, translation is
 
 
-![Translate Function](images/func_translation_0.png#gh-dark-mode-only)
-![Translate Function](images/func_translation.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & -dx\\
+0 & 1 & -dy\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1
+\end{pmatrix}
+```
+
 
 ```python
 def translate(img,dx,dy):
@@ -46,8 +64,25 @@ def translate(img,dx,dy):
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, the image rotates around the pixel ``(0,0)``
 
-![Rotate Function](images/func_rotation_0.png#gh-dark-mode-only)
-![Rotate Function](images/func_rotation.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos{\theta} & -\sin{\theta} & 0\\
+\sin{\theta} & \cos{\theta} & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1
+\end{pmatrix}
+```
 
 ```python
 def rotate(img,ang):
@@ -74,9 +109,25 @@ def rotate(img,ang):
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, scaling is
 
-
-![Scale Function](images/func_scale_0.png#gh-dark-mode-only)
-![Scale Function](images/func_scale.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1/S_x & 0 & 0\\
+0 & 1/S_y & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1
+\end{pmatrix}
+```
 
 ```python
 def scale(img,sx,sy):
@@ -108,8 +159,26 @@ def scale(img,sx,sy):
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, shearing is
 
 
-![Shear Function](images/func_shear_0.png#gh-dark-mode-only)
-![Shear Function](images/func_shear.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & -sh_x & 0\\
+-sh_y & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1
+\end{pmatrix}
+```
+
 
 ```python
 def shear(img,shx,shy):
@@ -136,9 +205,26 @@ def shear(img,shx,shy):
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, affine transformation is
 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+t_{11} & t_{21} & t_{31}\\
+t_{12} & t_{22} & t_{32}\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1
+\end{pmatrix}
+```
 
-![Affine Transformation](images/func_affine_0.png#gh-dark-mode-only)
-![Affine Transformation](images/func_affine.png#gh-light-mode-only) 
 
 ```python
 def affine(img,m):
