@@ -16,7 +16,7 @@ OpenCVのインストール: https://pypi.org/project/opencv-python/
 [Jupyter Notebook](http://jupyter.org)
 はOpenCVとnumpyのサポートはあるけど、ライブラリをインストールする必要がある。Jupyter Notebookと似たようなインターフェースの[Colab Google](https://colab.research.google.com)はPCにライブラリにインストールをする必要ないが、Googleアカウントとインターネット通信が必要。
 
-インストールされているライブラリ及びバージョンを見るためには、Google ColabまたはJupyterでは次のコマンドを打ち込む
+インストールされているライブラリ及びバージョンを確認するためには、Google ColabまたはJupyterでは次のコマンドを打ち込む
 
     !pip freeze
 
