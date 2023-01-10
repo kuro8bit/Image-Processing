@@ -1,6 +1,6 @@
 # Image Processing
 
-Language: [English](README.md), [日本語](README.ja.md)
+Language: [English](README.en.md), [日本語](README.md)
 
 Codes made for image processing. All codes were made without using openCV ready made functions.
 
