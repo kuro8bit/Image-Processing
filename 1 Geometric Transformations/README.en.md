@@ -1,7 +1,7 @@
 
 # Geometric Transformations
 
-[English](README.en.md) | [日本語](README.md)
+English | [日本語](README.md)
 
 ---------------------------------------
 
