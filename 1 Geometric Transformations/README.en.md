@@ -1,19 +1,19 @@
 
 # Geometric Transformations
 
-[English](README.en.md) | [日本語](README.md)
+[English](1 Geometric Transformations/README.en.md) | [日本語](1 Geometric Transformations/README.md)
 
 ---------------------------------------
 
-- [Translation](README.md#L16)
-- [Rotation](README.md#L44)
-- [Scaling](README.md#L72)
-- [Shearing](README.md#L104)
-- [Affine Transformation](README.md#L132)
+- [Translation](#translation)
+- [Rotation](#rotation)
+- [Scaling](#scaling)
+- [Shearing](#shearing)
+- [Affine Transformation](#affine) 
 
 ## Functions
 
-### Translation
+### Translation<a id='translation'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, translation is
 
@@ -41,7 +41,7 @@ def translate(img,dx,dy):
 ![png](images/output_7_0.png)
 
 
-### Rotation (in degrees)
+### Rotation (in degrees)<a id='rotation'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, rotation is
 
@@ -69,7 +69,7 @@ def rotate(img,ang):
 ![png](images/output_9_0.png)
 
 
-### Scaling
+### Scaling<a id='scaling'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, scaling is
 
@@ -101,7 +101,7 @@ def scale(img,sx,sy):
 ![png](images/output_11_0.png)
 
 
-### Shearing
+### Shearing<a id='shearing'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, shearing is
 
@@ -129,7 +129,7 @@ def shear(img,shx,shy):
 ![png](images/output_13_0.png)
 
 
-### Affine Transformation
+### Affine Transformation<a id='affine'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, affine transformation is
 
