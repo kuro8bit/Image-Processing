@@ -1,6 +1,6 @@
 ## エッジ検出
 
-[English](README.en.md) | [日本語](README.md)
+[English](README.en.md) | 日本語
 
 ---------------------------------------
 
