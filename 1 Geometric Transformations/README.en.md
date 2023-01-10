@@ -51,7 +51,7 @@ def translate(img,dx,dy):
         for v in range(row):
             x = u - dx
             y = v - dy
-            if(0<=x<col and 0<=y<row):
+            if(0 <= x < col and 0 <= y < row):
                 img_f[v,u] = img[y,x]
 
     return img_f
@@ -87,7 +87,7 @@ v\\
 ```python
 def rotate(img,ang):
     row,col = img.shape[:2]
-    rad = ang*math.pi/180
+    rad = ang * math.pi / 180 # convert angle to radian value
 
     # resulting image
     img_f = np.zeros(img.shape)
@@ -95,9 +95,9 @@ def rotate(img,ang):
     # rotate
     for u in range(col):
         for v in range(row):
-            x = round(u*math.cos(rad)-v*math.sin(rad))
-            y = round(u*math.sin(rad)+v*math.cos(rad))
-            if(0<=x<col and 0<=y<row):
+            x = round(u * math.cos(rad) - v * math.sin(rad))
+            y = round(u * math.sin(rad) + v * math.cos(rad))
+            if(0 <= x <col and 0 <= y < row):
                 img_f[v,u] = img[y,x]    
     return img_f
 ```
@@ -132,7 +132,7 @@ v\\
 ```python
 def scale(img,sx,sy):
     row,col = img.shape[:2]
-    M,N = int(round(sy*row)), int(round(sx*col)) # new shape
+    M,N = int(round(sy * row)), int(round(sx * col)) # new size
 
     # resulting image
     if(img.ndim==3):
@@ -143,9 +143,9 @@ def scale(img,sx,sy):
     # scale
     for u in range(N):
         for v in range(M):
-            x = round(u/sx)
-            y = round(v/sy)
-            if(0<=x<col and 0<=y<row):
+            x = round(u / sx)
+            y = round(v / sy)
+            if(0 <= x < col and 0 <= y < row):
                 img_f[v,u] = img[y,x]
 
     return img_f
@@ -190,9 +190,9 @@ def shear(img,shx,shy):
     # shear
     for u in range(col):
         for v in range(row):
-            x = round(u - v*shx)
-            y = round(v - u*shy)
-            if(0<=x<col and 0<=y<row):
+            x = round(u - v * shx)
+            y = round(v - u * shy)
+            if(0 <= x < col and 0 <= y < row):
                 img_f[v,u] = img[y,x]
 
     return img_f
@@ -236,9 +236,9 @@ def affine(img,m):
     # affine transformation
     for u in range(col):
         for v in range(row):            
-            x = int(round( t[0,0]*u + t[0,1]*v + t[0,2] ))
-            y = int(round( t[1,0]*u + t[1,1]*v + t[1,2] ))
-            if(0<=x<col and 0<=y<row):
+            x = int(round(t[0,0] * u + t[0,1] * v + t[0,2]))
+            y = int(round(t[1,0] * u + t[1,1] * v + t[1,2]))
+            if(0 <= x < col and 0 <= y < row):
                 img_f[v,u] = img[y,x]
 
     return img_f
