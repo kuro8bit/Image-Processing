@@ -43,7 +43,7 @@ def translate(img,dx,dy):
 
 ### Rotation (in degrees)<a id='rotation'></a>
 
-Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, rotation is
+Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, the image rotates around the pixel ``(0,0)``
 
 ![png](images/rotation.png)
 
