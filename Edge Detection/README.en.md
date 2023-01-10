@@ -19,14 +19,14 @@ English | [日本語](README.md)
 
 Execution time of each filter: around 10 seconds
 
-To apply the filters, considering each index on the mask
+To apply the filters, considering each index on the filter
 
 <div align="center">
   
-|(-1,-1)|(-1,0)|(-1,1)| 
+|$mask(-1,-1)$|$mask(-1,0)$|$mask(-1,1)$| 
 |--|--|--|
-|( 0,-1)|( 0,0)|( 0,1)| 
-|( 1,-1)|( 1,0)|( 1,1)| 
+|$mask( 0,-1)$|$mask( 0,0)$|$mask( 0,1)$| 
+|$mask( 1,-1)$|$mask( 1,0)$|$mask( 1,1)$| 
   
 </div>
 
@@ -47,10 +47,9 @@ g_V(x,y) = \sum_{u=-1}^{1}\sum_{v=-1}^{1} mask_V(u,v) \cdot f(x+u,y+v)
 ```math
 f(x,y) = \sqrt{g_H(x,y)^2 + g_V(x,y)^2}
 ```
+-------------------------------------
 
 ### Difference<a id='diff'></a>
-
-Can find horizontal and vertical edges. Has horizontal and vertical direction filters.
 
 <div align="center">
 <table>
@@ -83,9 +82,9 @@ Can find horizontal and vertical edges. Has horizontal and vertical direction fi
 
 </td></tr> </table>
 
-### Prewitt<a id='prewitt'></a>
+-------------------------------------
 
-Can find horizontal and vertical edges. Has horizontal and vertical direction filters.
+### Prewitt<a id='prewitt'></a>
 
 <div align="center">
 <table>
@@ -118,9 +117,9 @@ Can find horizontal and vertical edges. Has horizontal and vertical direction fi
 
 </td></tr> </table>
 
-### Roberts<a id='roberts'></a>
+-------------------------------------
 
-Can find inclined edges. Has horizontal and vertical direction filters.
+### Roberts<a id='roberts'></a>
 
 <div align="center">
 <table>
@@ -154,10 +153,9 @@ Can find inclined edges. Has horizontal and vertical direction filters.
 
 </td></tr> </table>
 
+-------------------------------------
 
 ### Sobel<a id='sobel'></a>
-
-Can find horizontal and vertical edges. Has horizontal and vertical direction filters.
 
 <div align="center">
 <table>
@@ -190,9 +188,9 @@ Can find horizontal and vertical edges. Has horizontal and vertical direction fi
 
 </td></tr> </table>
 
-### Laplacian 4<a id='lap4'></a>
+-------------------------------------
 
-Can find horizontal and vertical edges. Has one direction filter.
+### Laplacian 4<a id='lap4'></a>
 
 <div align="center">
   
@@ -214,9 +212,9 @@ Can find horizontal and vertical edges. Has one direction filter.
 
 </td></tr> </table>
 
-### Laplacian 8<a id='lap8'></a>
+-------------------------------------
 
-Can find horizontal and vertical edges. Has more weight than Laplacian 4.
+### Laplacian 8<a id='lap8'></a>
 
 <div align="center">
   
