@@ -1,4 +1,9 @@
 ## Edge Detection
+
+[English](README.en.md) | [日本語](README.md)
+
+---------------------------------------
+
 Simple image edge detection
 
 `.py` and `.ipynb` version
@@ -16,7 +21,7 @@ Simple image edge detection
 - Laplacian 4
 - Laplacian 8
 
-Time execution of each filter: around 10 seconds
+Execution time of each filter: around 10 seconds
 
 ## Test
 
