@@ -1,6 +1,8 @@
 # 画像処理
 
-[English](README.en.md) | [日本語](README.md)
+### [English](README.en.md) | [日本語](README.md)
+
+---------------------------------------
 
 画像処理の授業でできたコードです。画像処理の関数がopenCVを使わず、numpyだけで作成しました。
 
@@ -12,13 +14,13 @@
 OpenCVのインストール: https://pypi.org/project/opencv-python/
 
 [Jupyter Notebook](http://jupyter.org)
- Jupyter NotebookはOpenCVとnumpyのサポートはあるけど、ライブラリをインストールする必要がある。Jupyter Notebookと似たようなインターフェースの[Colab Google](https://colab.research.google.com)はPCにライブラリにインストールをする必要ないが、Googleアカウントとインターネット通信が必要です。
+Jupyter NotebookはOpenCVとnumpyのサポートはあるけど、ライブラリをインストールする必要がある。Jupyter Notebookと似たようなインターフェースの[Colab Google](https://colab.research.google.com)はPCにライブラリにインストールをする必要ないが、Googleアカウントとインターネット通信が必要です。
 
- インストールされているライブラリ及びバージョンを見るためには、Google ColabまたはJupyterでは次のコマンドを打ち込む
+インストールされているライブラリ及びバージョンを見るためには、Google ColabまたはJupyterでは次のコマンドを打ち込む
 
     !pip freeze
 
- Google ColabまだJupyterの環境内で新しいライブラリをインストールするためには
+Google ColabまだJupyterの環境内で新しいライブラリをインストールするためには
 
     !pip install *****
 
