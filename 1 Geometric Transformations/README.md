@@ -17,8 +17,8 @@
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、平行移動の関数は
 
 
-![input](images/func_translation_0.png#gh-dark-mode-only)
-![input](images/func_translation.png#gh-light-mode-only) 
+![Translate Function](images/func_translation_0.png#gh-dark-mode-only)
+![Translate Function](images/func_translation.png#gh-light-mode-only) 
 
 ```python
 def translate(img,dx,dy):
@@ -45,8 +45,8 @@ def translate(img,dx,dy):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、画素``(0,0)``を中心に回転する関数は
 
-![input](images/func_rotation_0.png#gh-dark-mode-only)
-![input](images/func_rotation.png#gh-light-mode-only) 
+![Rotate Function](images/func_rotation_0.png#gh-dark-mode-only)
+![Rotate Function](images/func_rotation.png#gh-light-mode-only) 
 
 ```python
 def rotate(img,ang):
@@ -74,8 +74,8 @@ def rotate(img,ang):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、拡大縮小の関数は
 
-![input](images/func_scale_0.png#gh-dark-mode-only)
-![input](images/func_scale.png#gh-light-mode-only) 
+![Scale Function](images/func_scale_0.png#gh-dark-mode-only)
+![Scale Function](images/func_scale.png#gh-light-mode-only) 
 
 ```python
 def scale(img,sx,sy):
@@ -106,8 +106,8 @@ def scale(img,sx,sy):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、せん断写像の関数は
 
-![input](images/func_shear_0.png#gh-dark-mode-only)
-![input](images/func_shear.png#gh-light-mode-only) 
+![Shear Function](images/func_shear_0.png#gh-dark-mode-only)
+![Shear Function](images/func_shear.png#gh-light-mode-only) 
 
 ```python
 def shear(img,shx,shy):
@@ -134,8 +134,8 @@ def shear(img,shx,shy):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、アフィン変換の関数は
 
-![input](images/func_affine_0.png#gh-dark-mode-only)
-![input](images/func_affine.png#gh-light-mode-only) 
+![Affine Transformation](images/func_affine_0.png#gh-dark-mode-only)
+![Affine Transformation](images/func_affine.png#gh-light-mode-only) 
 
 ```python
 def affine(img,m):
