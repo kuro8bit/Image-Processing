@@ -1,5 +1,7 @@
 # 画像処理
 
+Language: [English](README.md), [日本語](README.ja.md)
+
 画像処理の授業でできたコードです。画像処理の関数がopenCVを使わず、numpyだけで作成しました。
 
 使用したプログラミング言語とライブラリ：
