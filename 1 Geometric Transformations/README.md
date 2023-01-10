@@ -230,8 +230,8 @@ def affine(img,m):
     # アフィン変換
     for u in range(col):
         for v in range(row):            
-            x = int(round( t[0,0] * u + t[0,1] * v + t[0,2] ))
-            y = int(round( t[1,0] * u + t[1,1] * v + t[1,2] ))
+            x = int(round(t[0,0] * u + t[0,1] * v + t[0,2]))
+            y = int(round(t[1,0] * u + t[1,1] * v + t[1,2]))
             if(0 <= x < col and 0 <= y < row):
                 img_f[v,u] = img[y,x]
 
