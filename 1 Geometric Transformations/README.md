@@ -16,9 +16,25 @@
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、平行移動の関数は
 
-
-![Translate Function](images/func_translation_0.png#gh-dark-mode-only)
-![Translate Function](images/func_translation.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & 0 & -dx\\
+0 & 1 & -dy\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1\\
+\end{pmatrix}
+```
 
 ```python
 def translate(img,dx,dy):
@@ -45,8 +61,25 @@ def translate(img,dx,dy):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、画素``(0,0)``を中心に回転する関数は
 
-![Rotate Function](images/func_rotation_0.png#gh-dark-mode-only)
-![Rotate Function](images/func_rotation.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos{\theta} & -\sin{\theta} & 0\\
+\sin{\theta} & \cos{\theta} & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1\\
+\end{pmatrix}
+```
 
 ```python
 def rotate(img,ang):
@@ -74,8 +107,25 @@ def rotate(img,ang):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、拡大縮小の関数は
 
-![Scale Function](images/func_scale_0.png#gh-dark-mode-only)
-![Scale Function](images/func_scale.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1/S_x & 0 & 0\\
+0 & 1/S_y & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1\\
+\end{pmatrix}
+```
 
 ```python
 def scale(img,sx,sy):
@@ -106,8 +156,25 @@ def scale(img,sx,sy):
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、せん断写像の関数は
 
-![Shear Function](images/func_shear_0.png#gh-dark-mode-only)
-![Shear Function](images/func_shear.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+1 & -sh_x & 0\\
+-sh_y & 1 & 0\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1\\
+\end{pmatrix}
+```
 
 ```python
 def shear(img,shx,shy):
@@ -133,9 +200,25 @@ def shear(img,shx,shy):
 ### アフィン変換<a id='affine'></a>
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、アフィン変換の関数は
-
-![Affine Transformation](images/func_affine_0.png#gh-dark-mode-only)
-![Affine Transformation](images/func_affine.png#gh-light-mode-only) 
+```math
+\begin{pmatrix}
+x\\
+y\\
+1
+\end{pmatrix}
+=
+\begin{pmatrix}
+t_{11} & t_{21} & t_{31}\\
+t_{12} & t_{22} & t_{32}\\
+0 & 0 & 1
+\end{pmatrix}
+\cdot
+\begin{pmatrix}
+u\\
+v\\
+1\\
+\end{pmatrix}
+```
 
 ```python
 def affine(img,m):
