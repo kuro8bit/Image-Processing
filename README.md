@@ -1,6 +1,6 @@
 # 画像処理
 
-### [English](README.en.md) | [日本語](README.md)
+[English](README.en.md) | [日本語](README.md)
 
 ---------------------------------------
 
