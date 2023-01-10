@@ -137,8 +137,8 @@ def shear(img,shx,shy):
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, affine transformation is
 
 
-![Affine Function](images/func_affine_0.png#gh-dark-mode-only)
-![Affine Function](images/func_affine.png#gh-light-mode-only) 
+![Affine Transformation](images/func_affine_0.png#gh-dark-mode-only)
+![Affine Transformation](images/func_affine.png#gh-light-mode-only) 
 
 ```python
 def affine(img,m):
