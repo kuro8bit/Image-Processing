@@ -32,7 +32,7 @@ y\\
 \begin{pmatrix}
 u\\
 v\\
-1\\
+1
 \end{pmatrix}
 ```
 
@@ -77,7 +77,7 @@ y\\
 \begin{pmatrix}
 u\\
 v\\
-1\\
+1
 \end{pmatrix}
 ```
 
@@ -123,7 +123,7 @@ y\\
 \begin{pmatrix}
 u\\
 v\\
-1\\
+1
 \end{pmatrix}
 ```
 
@@ -172,7 +172,7 @@ y\\
 \begin{pmatrix}
 u\\
 v\\
-1\\
+1
 \end{pmatrix}
 ```
 
@@ -216,7 +216,7 @@ t_{12} & t_{22} & t_{32}\\
 \begin{pmatrix}
 u\\
 v\\
-1\\
+1
 \end{pmatrix}
 ```
 
