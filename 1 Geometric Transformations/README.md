@@ -16,7 +16,9 @@
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、平行移動の関数は
 
-![png](images/translation.png)
+
+![input](images/func_translation_0.png#gh-dark-mode-only)
+![input](images/func_translation.png#gh-light-mode-only) 
 
 ```python
 def translate(img,dx,dy):
@@ -36,15 +38,15 @@ def translate(img,dx,dy):
     return img_f
 ```
 
-
-![png](images/output_7_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![translate](images/output_1_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![translate](images/output_1.png#gh-light-mode-only)
 
 ### 回転 (度°)<a id='rotation'></a>
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、画素``(0,0)``を中心に回転する関数は
 
-![png](images/rotation.png)
+![input](images/func_rotation_0.png#gh-dark-mode-only)
+![input](images/func_rotation.png#gh-light-mode-only) 
 
 ```python
 def rotate(img,ang):
@@ -64,15 +66,16 @@ def rotate(img,ang):
     return img_f
 ```
 
-
-![png](images/output_9_0.png)
+![input](images/input_0.png#gh-dark-mode-only) ![rotation](images/output_2_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![rotation](images/output_2.png#gh-light-mode-only)
 
 
 ### 拡大縮小<a id='scaling'></a>
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、拡大縮小の関数は
 
-![png](images/scale.png)
+![input](images/func_scale_0.png#gh-dark-mode-only)
+![input](images/func_scale.png#gh-light-mode-only) 
 
 ```python
 def scale(img,sx,sy):
@@ -96,15 +99,15 @@ def scale(img,sx,sy):
     return img_f
 ```
 
-
-![png](images/output_11_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![scale](images/output_3_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![scale](images/output_3.png#gh-light-mode-only)
 
 ### せん断写像<a id='shearing'></a>
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、せん断写像の関数は
 
-![png](images/shear.png)
+![input](images/func_shear_0.png#gh-dark-mode-only)
+![input](images/func_shear.png#gh-light-mode-only) 
 
 ```python
 def shear(img,shx,shy):
@@ -124,15 +127,15 @@ def shear(img,shx,shy):
     return img_f
 ```
 
-
-![png](images/output_13_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![shearing](images/output_4_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![shearing](images/output_4.png#gh-light-mode-only)
 
 ### アフィン変換<a id='affine'></a>
 
 ``(u,v)``が変換後の画素と``(x,y)``が元の画素とすると、アフィン変換の関数は
 
-![png](images/affine.png)
+![input](images/func_affine_0.png#gh-dark-mode-only)
+![input](images/func_affine.png#gh-light-mode-only) 
 
 ```python
 def affine(img,m):
@@ -152,5 +155,5 @@ def affine(img,m):
     return img_f
 ```
 
-![png](images/output_15_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![affine](images/output_5_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![affine](images/output_5.png#gh-light-mode-only)
