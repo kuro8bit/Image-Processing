@@ -17,7 +17,9 @@
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, translation is
 
-![png](images/translation.png)
+
+![Translate Function](images/func_translation_0.png#gh-dark-mode-only)
+![Translate Function](images/func_translation.png#gh-light-mode-only) 
 
 ```python
 def translate(img,dx,dy):
@@ -37,15 +39,15 @@ def translate(img,dx,dy):
     return img_f
 ```
 
-
-![png](images/output_7_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![translation](images/output_1_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![translation](images/output_1.png#gh-light-mode-only)
 
 ### Rotation (in degrees)<a id='rotation'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, the image rotates around the pixel ``(0,0)``
 
-![png](images/rotation.png)
+![Rotate Function](images/func_rotation_0.png#gh-dark-mode-only)
+![Rotate Function](images/func_rotation.png#gh-light-mode-only) 
 
 ```python
 def rotate(img,ang):
@@ -65,15 +67,16 @@ def rotate(img,ang):
     return img_f
 ```
 
-
-![png](images/output_9_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![rotation](images/output_2_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![rotation](images/output_2.png#gh-light-mode-only)
 
 ### Scaling<a id='scaling'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, scaling is
 
-![png](images/scale.png)
+
+![Scale Function](images/func_scale_0.png#gh-dark-mode-only)
+![Scale Function](images/func_scale.png#gh-light-mode-only) 
 
 ```python
 def scale(img,sx,sy):
@@ -97,15 +100,16 @@ def scale(img,sx,sy):
     return img_f
 ```
 
-
-![png](images/output_11_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![scale](images/output_3_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![scale](images/output_3.png#gh-light-mode-only)
 
 ### Shearing<a id='shearing'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, shearing is
 
-![png](images/shear.png)
+
+![Shear Function](images/func_shear_0.png#gh-dark-mode-only)
+![Shear Function](images/func_shear.png#gh-light-mode-only) 
 
 ```python
 def shear(img,shx,shy):
@@ -125,15 +129,16 @@ def shear(img,shx,shy):
     return img_f
 ```
 
-
-![png](images/output_13_0.png)
-
+![input](images/input_0.png#gh-dark-mode-only) ![shear](images/output_4_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![shear](images/output_4.png#gh-light-mode-only)
 
 ### Affine Transformation<a id='affine'></a>
 
 Considering that ``(u,v)`` is the new image pixel and ``(x,y)`` the old image pixel, affine transformation is
 
-![png](images/affine.png)
+
+![Affine Function](images/func_affine_0.png#gh-dark-mode-only)
+![Affine Function](images/func_affine.png#gh-light-mode-only) 
 
 ```python
 def affine(img,m):
@@ -153,4 +158,5 @@ def affine(img,m):
     return img_f
 ```
 
-![png](images/output_15_0.png)
+![input](images/input_0.png#gh-dark-mode-only) ![affine](images/output_5_0.png#gh-dark-mode-only)
+![input](images/input.png#gh-light-mode-only) ![affine](images/output_5.png#gh-light-mode-only)
