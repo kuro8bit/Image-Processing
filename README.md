@@ -4,7 +4,7 @@
 
 ---------------------------------------
 
-画像処理の授業でできたコードです。OpenCVの画像処理の関数を使わず、numpyだけで計算をさせた。
+画像処理の授業でできたコード。OpenCVの画像処理の関数を使わず、numpyだけで計算をさせた。
 
 使用したプログラミング言語とライブラリ：
 - [Python 3](https://www.python.org)
@@ -14,7 +14,7 @@
 OpenCVのインストール: https://pypi.org/project/opencv-python/
 
 [Jupyter Notebook](http://jupyter.org)
-Jupyter NotebookはOpenCVとnumpyのサポートはあるけど、ライブラリをインストールする必要がある。Jupyter Notebookと似たようなインターフェースの[Colab Google](https://colab.research.google.com)はPCにライブラリにインストールをする必要ないが、Googleアカウントとインターネット通信が必要です。
+Jupyter NotebookはOpenCVとnumpyのサポートはあるけど、ライブラリをインストールする必要がある。Jupyter Notebookと似たようなインターフェースの[Colab Google](https://colab.research.google.com)はPCにライブラリにインストールをする必要ないが、Googleアカウントとインターネット通信が必要。
 
 インストールされているライブラリ及びバージョンを見るためには、Google ColabまたはJupyterでは次のコマンドを打ち込む
 
